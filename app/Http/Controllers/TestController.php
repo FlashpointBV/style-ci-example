@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
@@ -12,7 +11,8 @@ class TestController extends Controller
      */
     public function __invoke(): RedirectResponse
     {
-        die('asdf');
+        exit('asdf');
+
         return redirect()->back();
     }
 }
