@@ -9,10 +9,16 @@ class TestController extends Controller
     /**
      * @return RedirectResponse
      */
-    public function __invoke(): RedirectResponse
+    public function __invoke(string $mike): RedirectResponse
     {
-        exit('asdf');
 
-        return redirect()->back();
+
+
+
+
+
+        aap
+
+        return redirect()->back();;
     }
 }
