@@ -2,14 +2,17 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
-    public function __invoke()
+    /**
+     * @return RedirectResponse
+     */
+    public function __invoke(): RedirectResponse
     {
-        // TODO: Implement __invoke() method.
-
+        die('asdf');
         return redirect()->back();
     }
 }
