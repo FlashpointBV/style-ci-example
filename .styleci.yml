@@ -1,8 +1,6 @@
 php:
   preset: laravel
   version: 8
-  disabled:
-    - no_unused_imports
   finder:
     exclude:
       - "modules"
@@ -17,7 +15,45 @@ php:
       - "*.blade.php"
       - "_ide_helper.php"
 js:
+  tab-width: 2
+  use-tabs: false
+  print-width: 120
+  double-quotes: false
+  trailing-commas: es5
+  semicolons: true
+  arrow-parens: always
+  bracket-same-line: false
+  bracket-spacing: true
   finder:
+    exclude:
+      - "modules"
+      - "node_modules"
+      - "nova"
+      - "nova-components"
+      - "storage"
+      - "spark"
+      - "vendor"
+    name:
+      - "*.js"
+      - "*.jsx"
     not-name:
-      - webpack.mix.js
-css: true
+      - "*.min.js"
+      - "webpack.mix.js"
+css:
+  tab-width: 4
+  use-tabs: false
+  print-width: 120
+  double-quotes: false
+  finder:
+    exclude:
+      - "modules"
+      - "node_modules"
+      - "nova"
+      - "nova-components"
+      - "storage"
+      - "spark"
+      - "vendor"
+    name:
+      - "*.css"
+      - "*.scss"
+      - "*.less"
