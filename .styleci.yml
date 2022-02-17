@@ -1,8 +1,6 @@
 php:
   preset: laravel
   version: 8
-  enabled:
-    - psr4
   finder:
     exclude:
       - "modules"
@@ -17,6 +15,7 @@ php:
       - "*.blade.php"
       - "_ide_helper.php"
 js:
+  tab-width: 2
   finder:
     not-name:
       - webpack.mix.js
