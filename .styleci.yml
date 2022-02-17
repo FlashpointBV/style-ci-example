@@ -1,7 +1,7 @@
 php:
   preset: laravel
   version: 8
-  enable:
+  enabled:
     - psr4
   finder:
     exclude:
