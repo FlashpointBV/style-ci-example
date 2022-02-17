@@ -11,14 +11,6 @@ class TestController extends Controller
      */
     public function __invoke(string $mike): RedirectResponse
     {
-
-
-
-
-
-
-
-
-        return redirect()->back();;
+        return redirect()->back();
     }
 }
