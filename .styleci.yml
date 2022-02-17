@@ -57,3 +57,25 @@ css:
       - "*.css"
       - "*.scss"
       - "*.less"
+vue:
+  tab-width: 2
+  use-tabs: false
+  print-width: 120
+  double-quotes: false
+  trailing-commas: es5
+  semicolons: true
+  arrow-parens: always
+  bracket-same-line: false
+  bracket-spacing: true
+  indent-script-and-style: false
+  whitespace-sensitivity: css
+  finder:
+    exclude:
+      - "modules"
+      - "node_modules"
+      - "nova"
+      - "nova-components"
+      - "storage"
+      - "spark"
+      - "vendor"
+    name: "*.vue"
